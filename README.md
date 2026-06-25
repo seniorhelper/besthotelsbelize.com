@@ -1,0 +1,2 @@
+# besthotelsbelize.com
+besthotelsbelize.com
