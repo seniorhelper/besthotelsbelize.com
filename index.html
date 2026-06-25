@@ -1,1 +1,658 @@
-keep
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Best Hotels in Belize (2026) — Island Resorts, Beach Villas & Jungle Lodges</title>
+<meta name="description" content="Find the best hotels in Belize for 2026. Compare luxury island resorts on Ambergris Caye, beach villas in Placencia, and jungle lodges in Cayo — with an interactive hotel finder, reef guide & FAQ.">
+<link rel="canonical" href="https://besthotelsbelize.com/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Best Hotels in Belize (2026) — Island Resorts, Beach Villas & Jungle Lodges">
+<meta property="og:description" content="Find the best hotels in Belize for 2026. Compare luxury island resorts on Ambergris Caye, beach villas in Placencia, and jungle lodges in Cayo — with an interactive hotel finder, reef guide & FAQ.">
+<meta property="og:url" content="https://besthotelsbelize.com/">
+<meta property="og:image" content="https://besthotelsbelize.com/images/best-hotels-belize.jpg">
+<meta property="og:site_name" content="Best Hotels Belize">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="icon" type="image/png" href="/images/belize-best-hotels-favicon.png">
+<link rel="apple-touch-icon" href="/images/belize-best-hotels-favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sea:#0fb6c4; --sea-deep:#067a8c; --abyss:#04323a; --ink:#062a30;
+  --sand:#f6efe2; --sand-warm:#efe2cb; --coral:#ff6b5e; --mango:#ffc043;
+  --jade:#0f8a4d; --paper:#fffdf8; --line:rgba(6,42,48,.12);
+  --glass:rgba(255,253,248,.10); --glass-line:rgba(255,255,255,.35);
+  --shadow:0 18px 50px -22px rgba(4,50,58,.55);
+  --display:"Fraunces",Georgia,serif; --body:"Outfit",system-ui,sans-serif;
+  --util:"Space Grotesk",ui-monospace,monospace;
+  --rad:18px; --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);
+  line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.08;font-weight:600;letter-spacing:-.01em}
+a{color:var(--sea-deep);text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.eyebrow{font-family:var(--util);text-transform:uppercase;letter-spacing:.22em;
+  font-size:.72rem;font-weight:600;color:var(--sea-deep)}
+
+/* ---- NAV ---- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:.35s;
+  padding:14px 0;background:transparent}
+.nav.scrolled{background:rgba(255,253,248,.82);backdrop-filter:blur(14px);
+  box-shadow:0 1px 0 var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand img{width:280px;max-width:54vw;height:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.35))}
+.nav.scrolled .brand img{filter:none}
+.nav-links{display:flex;align-items:center;gap:10px}
+.nav-links a.glass{padding:9px 16px;border-radius:999px;font-weight:500;font-size:.95rem;
+  color:#fff;background:var(--glass);border:1px solid var(--glass-line);
+  backdrop-filter:blur(8px);transition:.25s}
+.nav.scrolled .nav-links a.glass{color:var(--ink);background:rgba(15,182,196,.10);
+  border-color:rgba(6,42,48,.14)}
+.nav-links a.glass:hover{background:var(--coral);border-color:transparent;color:#fff;transform:translateY(-1px)}
+.nav-links a.cta{background:var(--coral);border-color:transparent;color:#fff;font-weight:600}
+.burger{display:none;flex-direction:column;gap:5px;background:var(--glass);
+  border:1px solid var(--glass-line);border-radius:12px;padding:11px;cursor:pointer}
+.burger span{width:22px;height:2px;background:#fff;transition:.3s}
+.nav.scrolled .burger span{background:var(--ink)}
+
+/* ---- HERO + VIDEO ---- */
+.hero{position:relative;min-height:96vh;display:flex;align-items:center;
+  justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(4,50,58,.46) 0%,rgba(4,50,58,.30) 40%,rgba(4,50,58,.74) 100%)}
+.hero-in{max-width:920px;padding:120px 22px 80px}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);text-shadow:0 4px 30px rgba(0,0,0,.4)}
+.hero h1 em{font-style:italic;color:var(--mango)}
+.hero p.lede{font-size:clamp(1.05rem,2.1vw,1.35rem);max-width:640px;margin:18px auto 0;
+  color:rgba(255,255,255,.94);text-shadow:0 2px 14px rgba(0,0,0,.4)}
+.hero .eyebrow{color:var(--mango)}
+
+/* ---- HERO SEARCH TOOL ---- */
+.finder{margin:34px auto 0;max-width:760px;background:rgba(255,253,248,.14);
+  border:1px solid var(--glass-line);border-radius:22px;padding:18px;backdrop-filter:blur(16px);
+  box-shadow:var(--shadow)}
+.finder-row{display:flex;gap:10px;flex-wrap:wrap}
+.finder select,.finder input{flex:1;min-width:150px;padding:14px 15px;border-radius:13px;
+  border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.92);color:var(--ink);
+  font-family:var(--body);font-size:1rem;font-weight:500}
+.finder button{padding:14px 26px;border:none;border-radius:13px;background:var(--coral);
+  color:#fff;font-weight:700;font-size:1rem;cursor:pointer;font-family:var(--body);transition:.25s}
+.finder button:hover{background:#ff5244;transform:translateY(-1px)}
+.finder-hint{margin-top:10px;font-size:.82rem;color:rgba(255,255,255,.86);font-family:var(--util)}
+
+/* ---- WAVE DIVIDER ---- */
+.wave{display:block;width:100%;height:auto;line-height:0}
+.wave svg{display:block;width:100%;height:90px}
+.wave .w-move{animation:waveShift 14s linear infinite}
+@keyframes waveShift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---- SECTIONS ---- */
+.section{padding:84px 0}
+.section.tint{background:linear-gradient(180deg,var(--sand) 0%,var(--sand-warm) 100%)}
+.section.deep{background:radial-gradient(120% 120% at 80% 0%,#0a4e5a 0%,var(--abyss) 70%);color:var(--sand)}
+.section.deep h2,.section.deep h3{color:#fff}
+.section.deep .eyebrow{color:var(--mango)}
+.sec-head{max-width:680px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(2rem,4.4vw,3.1rem);margin:.4rem 0 .6rem}
+.sec-head p{font-size:1.08rem;color:rgba(6,42,48,.78)}
+.section.deep .sec-head p{color:rgba(246,239,226,.86)}
+
+/* ---- HOTEL CARDS ---- */
+.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--rad);
+  overflow:hidden;box-shadow:0 10px 34px -24px rgba(4,50,58,.5);transition:.35s;
+  display:flex;flex-direction:column;opacity:0;transform:translateY(24px)}
+.card.in{opacity:1;transform:none}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--sea)}
+.card .ph{position:relative;aspect-ratio:16/10;background:#0a4e5a;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.card:hover .ph img{transform:scale(1.06)}
+.card .tag{position:absolute;top:12px;left:12px;background:rgba(255,253,248,.94);
+  color:var(--ink);font-family:var(--util);font-size:.68rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.12em;padding:6px 11px;border-radius:999px}
+.card .body{padding:20px 20px 22px;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:1.4rem;margin-bottom:4px}
+.card .where{font-family:var(--util);font-size:.78rem;color:var(--sea-deep);
+  text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
+.card p{font-size:.97rem;color:rgba(6,42,48,.82);flex:1}
+.card .feats{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.card .feats span{font-size:.74rem;background:rgba(15,182,196,.12);color:var(--sea-deep);
+  padding:4px 10px;border-radius:999px;font-weight:600}
+.card.hidden{display:none}
+
+/* ---- MATCHER QUIZ ---- */
+.matcher{background:var(--paper);border:1px solid var(--line);border-radius:24px;
+  padding:34px;box-shadow:var(--shadow);max-width:760px;margin:0 auto}
+.matcher .q{margin-bottom:22px}
+.matcher .q h4{font-family:var(--body);font-weight:700;font-size:1.02rem;margin-bottom:12px}
+.opts{display:flex;flex-wrap:wrap;gap:9px}
+.opts button{padding:10px 16px;border-radius:999px;border:1.5px solid var(--line);
+  background:#fff;color:var(--ink);font-family:var(--body);font-weight:500;cursor:pointer;transition:.2s}
+.opts button:hover{border-color:var(--sea)}
+.opts button.sel{background:var(--sea-deep);color:#fff;border-color:transparent}
+.matcher .result{margin-top:8px;padding:22px;border-radius:16px;background:linear-gradient(135deg,#073b44,#0a5a68);
+  color:#fff;display:none}
+.matcher .result.show{display:block;animation:pop .4s ease}
+@keyframes pop{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+.matcher .result h4{font-family:var(--display);font-size:1.5rem;color:var(--mango);margin-bottom:6px}
+.matcher .result a{color:#fff;font-weight:700;text-decoration:underline}
+
+/* ---- AUTHORITY STAT STRIP ---- */
+.stats{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.stat{padding:22px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14)}
+.stat .n{font-family:var(--display);font-size:2.4rem;color:var(--mango);line-height:1}
+.stat .l{font-size:.92rem;color:rgba(246,239,226,.86);margin-top:6px}
+
+/* ---- IN-TEXT AD ---- */
+.adbox{margin:30px 0;border-radius:18px;overflow:hidden;border:1px solid var(--line);
+  background:linear-gradient(120deg,#fff,#f3fbfc);display:grid;grid-template-columns:160px 1fr;align-items:center}
+.adbox img{height:100%;object-fit:cover;background:#063a44}
+.adbox .ad-c{padding:20px 22px}
+.adbox .ad-k{font-family:var(--util);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--coral);font-weight:600}
+.adbox h4{font-size:1.25rem;margin:5px 0 6px}
+.adbox p{font-size:.95rem;color:rgba(6,42,48,.8)}
+.adbox a.adlink{display:inline-block;margin-top:10px;font-weight:700;font-family:var(--util);font-size:.85rem}
+
+/* ---- PROSE ---- */
+.prose{max-width:760px}
+.prose p{margin:0 0 18px;font-size:1.07rem;color:rgba(6,42,48,.86)}
+.prose h3{font-size:1.7rem;margin:34px 0 12px}
+.prose a{font-weight:600;border-bottom:1.5px solid rgba(15,182,196,.4)}
+
+/* ---- REGION SPLIT (home) ---- */
+.regions{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.region{position:relative;border-radius:20px;overflow:hidden;min-height:300px;display:flex;
+  align-items:flex-end;color:#fff;box-shadow:var(--shadow)}
+.region img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:.6s}
+.region:hover img{transform:scale(1.07)}
+.region::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(4,50,58,0) 30%,rgba(4,50,58,.85) 100%)}
+.region .rc{padding:24px}
+.region h3{font-size:1.7rem;color:#fff}
+.region p{font-size:.95rem;color:rgba(255,255,255,.9);margin:6px 0 0}
+.region .go{display:inline-block;margin-top:12px;font-family:var(--util);font-size:.8rem;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--mango);font-weight:600}
+
+/* ---- FAQ ---- */
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{font-family:var(--display);font-size:1.2rem;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;gap:16px;font-weight:600}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--coral);font-family:var(--body);transition:.3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin-top:12px;color:rgba(6,42,48,.84);font-size:1.02rem}
+
+/* ---- FOOTER ---- */
+.foot{background:var(--abyss);color:rgba(246,239,226,.84);padding:60px 0 30px}
+.foot .cols{display:grid;gap:34px;grid-template-columns:1.4fr 1fr 1fr 1fr}
+.foot h5{font-family:var(--util);text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;
+  color:var(--mango);margin-bottom:14px}
+.foot a{color:rgba(246,239,226,.82);display:block;padding:4px 0;font-size:.94rem}
+.foot a:hover{color:#fff}
+.foot .brandline{font-family:var(--display);font-size:1.3rem;color:#fff;margin-bottom:10px}
+.foot .net span{font-size:.82rem}
+.foot .legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.84rem;color:rgba(246,239,226,.6)}
+.foot .legal a{display:inline}
+
+/* ---- REVEAL ---- */
+.reveal{opacity:0;transform:translateY(22px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---- RESPONSIVE ---- */
+@media(max-width:860px){
+  .nav-links{position:fixed;top:0;right:-100%;height:100vh;width:78%;max-width:320px;
+    flex-direction:column;align-items:stretch;justify-content:center;gap:14px;padding:40px;
+    background:rgba(4,50,58,.97);backdrop-filter:blur(20px);transition:.4s;z-index:70}
+  .nav-links.open{right:0}
+  .nav-links a.glass{color:#fff;text-align:center;font-size:1.1rem}
+  .burger{display:flex;z-index:80}
+  .foot .cols{grid-template-columns:1fr 1fr}
+  .adbox{grid-template-columns:1fr}
+  .adbox img{height:150px}
+}
+@media(max-width:540px){
+  .brand img{width:210px}
+  .foot .cols{grid-template-columns:1fr}
+  .finder button{width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal,.card{opacity:1;transform:none}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://besthotelsbelize.com/#website", "url": "https://besthotelsbelize.com/", "name": "Best Hotels Belize", "description": "Independent guide to the best hotels and luxury resorts in Belize.", "publisher": {"@id": "https://besthotelsbelize.com/#org"}, "potentialAction": {"@type": "SearchAction", "target": "https://besthotelsbelize.com/?q={query}", "query-input": "required name=query"}}, {"@type": "Organization", "@id": "https://besthotelsbelize.com/#org", "name": "Best Hotels Belize", "url": "https://besthotelsbelize.com/", "logo": "https://besthotelsbelize.com/images/best-hotels-belize-logo.png", "parentOrganization": {"@type": "Organization", "name": "Eye To Ad Media", "url": "https://www.eyetoad.com"}}, {"@type": "WebPage", "@id": "https://besthotelsbelize.com/#webpage", "url": "https://besthotelsbelize.com/", "isPartOf": {"@id": "https://besthotelsbelize.com/#website"}, "name": "Best Hotels in Belize (2026) — Island Resorts, Beach Villas & Jungle Lodges", "primaryImageOfPage": "https://besthotelsbelize.com/images/best-hotels-belize.jpg"}, {"@type": "ItemList", "name": "Best Hotels in Belize", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Alaia Belize, Autograph Collection"}, {"@type": "ListItem", "position": 2, "name": "Matachica Resort & Spa"}, {"@type": "ListItem", "position": 3, "name": "Victoria House"}, {"@type": "ListItem", "position": 4, "name": "Cayo Espanto"}, {"@type": "ListItem", "position": 5, "name": "Las Terrazas Resort & Residences"}, {"@type": "ListItem", "position": 6, "name": "Grand Caribe Belize"}, {"@type": "ListItem", "position": 7, "name": "Turtle Inn"}, {"@type": "ListItem", "position": 8, "name": "Chabil Mar Villas"}, {"@type": "ListItem", "position": 9, "name": "Naia Resort & Spa"}, {"@type": "ListItem", "position": 10, "name": "Ocean Breeze Beach Resort"}, {"@type": "ListItem", "position": 11, "name": "The Lodge at Chaa Creek"}, {"@type": "ListItem", "position": 12, "name": "Ka'ana Resort"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the best area to stay in Belize?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on your trip. Ambergris Caye and San Pedro suit reef snorkeling, dining, and nightlife; the Placencia Peninsula offers long mainland beaches and a walkable village; and the Cayo District around San Ignacio is the base for jungle lodges, caves, and Maya ruins. Many travelers split a week between an island and the jungle."}}, {"@type": "Question", "name": "What are the best luxury hotels in Belize?", "acceptedAnswer": {"@type": "Answer", "text": "Top-rated luxury stays include Alaia Belize (Autograph Collection), Matachica, and Victoria House on Ambergris Caye; Turtle Inn and Chabil Mar in Placencia; and The Lodge at Chaa Creek, Ka'ana, and Blancaneaux in the Cayo jungle. Private-island options include Cayo Espanto and Coco Plum."}}, {"@type": "Question", "name": "When is the best time to visit Belize?", "acceptedAnswer": {"@type": "Answer", "text": "The dry season from late November through May brings sunny days, calm seas, and the clearest reef visibility, and it is peak season. June through November is the wet season, which means fewer crowds and lower rates, with occasional tropical storms."}}, {"@type": "Question", "name": "How do you get to the islands in Belize?", "acceptedAnswer": {"@type": "Answer", "text": "From Belize City you can fly to San Pedro on Tropic Air or Maya Island Air in about 15 to 30 minutes for roughly US$80, with sweeping reef views, or take a water taxi in about 75 to 90 minutes for around US$30 one way."}}, {"@type": "Question", "name": "Does Belize have all-inclusive resorts?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, though they are less common than in some Caribbean destinations. Private-island resorts such as Cayo Espanto and Coco Plum run all-inclusive, while many travelers prefer boutique beachfront hotels for flexibility and access to local restaurants."}}]}]}</script>
+</head>
+<body>
+
+<nav class="nav"><div class="wrap nav-in">
+  <a class="brand" href="/" aria-label="Best Hotels Belize home"><img src="/images/best-hotels-belize-logo.png" alt="Best Hotels Belize logo" width="280"></a>
+  <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <div class="nav-links">
+    <a class="glass" href="/">Home</a>
+    <a class="glass" href="/belize-island-resorts.html">Island Resorts</a>
+    <a class="glass" href="/belize-jungle-lodges.html">Jungle Lodges</a>
+    <a class="glass" href="/#faq">FAQ</a>
+    <a class="glass cta" href="/#finder">Find a Hotel</a>
+  </div>
+</div></nav>
+
+<!-- HERO with autoplay video + finder -->
+<header class="hero">
+  <video autoplay muted loop playsinline poster="/images/best-hotels-belize.jpg">
+    <source src="/images/best-hotels-belize.mp4" type="video/mp4">
+  </video>
+  <div class="hero-in">
+    <span class="eyebrow">Belize Barrier Reef &middot; Jungle &middot; Cayes</span>
+    <h1>Find Your <em>Dream Hotel</em><br>in Belize</h1>
+    <p class="lede">From overwater villas on Ambergris Caye to canopy suites deep in the Maya jungle, this is the independent guide to where to stay in Belize, matched to the trip you actually want.</p>
+
+    <div class="finder" id="finder">
+      <div class="finder-row">
+        <select id="f-region" aria-label="Region">
+          <option value="">Where to go &mdash; any region</option>
+          <option value="island">Islands &amp; Cayes</option>
+          <option value="coast">Placencia Coast</option>
+          <option value="jungle">Jungle &amp; Cayo</option>
+        </select>
+        <select id="f-vibe" aria-label="Trip style">
+          <option value="">Trip style &mdash; any vibe</option>
+          <option value="beach">Beach &amp; reef</option>
+          <option value="romance">Romance</option>
+          <option value="adventure">Adventure &amp; ruins</option>
+          <option value="seclusion">Seclusion / private</option>
+          <option value="wellness">Wellness &amp; spa</option>
+          <option value="family">Family</option>
+        </select>
+        <select id="f-budget" aria-label="Budget">
+          <option value="">Budget &mdash; any</option>
+          <option value="mid">Mid-range</option>
+          <option value="luxury">Luxury</option>
+          <option value="ultra">Ultra-luxury</option>
+        </select>
+        <button id="f-go" type="button">Find hotels</button>
+      </div>
+      <div class="finder-hint" id="f-hint">16 hand-picked resorts ready &mdash; pick a filter, then scroll to your matches.</div>
+    </div>
+  </div>
+</header>
+<div class="wave"  aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<g class="w-move"><path fill="#f6efe2" d="M0,40 C180,80 360,0 720,40 C1080,80 1260,10 1440,40 L1440,90 L0,90 Z"></path>
+<path fill="#f6efe2" d="M1440,40 C1620,80 1800,0 2160,40 C2520,80 2700,10 2880,40 L2880,90 L1440,90 Z"></path></g></svg></div>
+
+<!-- INTRO / sense of place -->
+<section class="section tint">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Why Belize is different</span>
+      <h2>The best stays don't insulate you from Belize &mdash; they drop you inside it</h2>
+      <p>Geography leads here. Rivers cut through lodge grounds, the world's second-largest barrier reef sets the daily rhythm, and villages sit close enough that you actually feel the place. Consequently, the country's standout hotels stay modest in scale and rich in character. Below, we've sorted them the way travelers really decide: by region, by the trip you're chasing, and by what each property genuinely does best.</p>
+    </div>
+
+    <!-- region split -->
+    <div class="regions reveal">
+      <a class="region" href="/belize-island-resorts.html" style="text-decoration:none">
+        <img src="/images/hotels-belize.jpg" alt="Belize island resorts on Ambergris Caye">
+        <div class="rc"><h3>Islands &amp; Cayes</h3><p>Ambergris Caye, San Pedro &amp; private islands, reef at the doorstep.</p><span class="go">Explore island resorts &rarr;</span></div>
+      </a>
+      <a class="region" href="#coast" style="text-decoration:none">
+        <img src="/images/best-hotels-belize.jpg" alt="Placencia beach hotels in Belize">
+        <div class="rc"><h3>Placencia Coast</h3><p>A 16-mile peninsula of mainland beaches and a walkable fishing village.</p><span class="go">See coastal stays &rarr;</span></div>
+      </a>
+      <a class="region" href="/belize-jungle-lodges.html" style="text-decoration:none">
+        <img src="/images/belize-hotels.jpg" alt="Belize jungle lodges in the Cayo District">
+        <div class="rc"><h3>Jungle &amp; Cayo</h3><p>Rainforest lodges, caves, waterfalls and ancient Maya cities.</p><span class="go">Explore jungle lodges &rarr;</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ALL HOTELS (filterable) -->
+<section class="section" id="hotels">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The shortlist</span>
+      <h2>The best hotels in Belize, region by region</h2>
+      <p>Every property below is here for a reason a guidebook would recognize: a private beach, a real spa, a reef minutes away, or guides who can get you to Caracol by breakfast. Use the finder above to narrow the list, or browse the full collection.</p>
+    </div>
+    <div class="grid" id="hotelGrid">
+<article class="card" data-region="island" data-budget="luxury" data-vibe="beach">
+  <div class="ph"><span class="tag">Marriott</span><img src="/images/hotel-belize.jpg" alt="Alaia Belize, Autograph Collection — San Pedro, Ambergris Caye, Belize" loading="lazy"></div>
+  <div class="body"><h3>Alaia Belize, Autograph Collection</h3><div class="where">San Pedro, Ambergris Caye</div>
+  <p>A stylish, laid-back beach hotel within easy reach of San Pedro, Alaia oozes barefoot luxury. Its adults-only rooftop infinity pool frames panoramic Caribbean views, while the Belize Barrier Reef sits less than a mile offshore for snorkeling and diving straight from the sand.</p><div class="feats"><span>Rooftop infinity pool</span><span>Reef snorkeling</span><span>Beachfront</span></div></div>
+</article>
+<article class="card" data-region="island" data-budget="luxury" data-vibe="romance">
+  <div class="ph"><span class="tag">Adults / Romance</span><img src="/images/hotels-belize.jpg" alt="Matachica Resort & Spa — North Ambergris Caye, Belize" loading="lazy"></div>
+  <div class="body"><h3>Matachica Resort & Spa</h3><div class="where">North Ambergris Caye</div>
+  <p>Reached by a short flight or water taxi from Belize City, Matachica is a beachfront sanctuary of individually designed casitas, over-ocean loungers, and a spa set back from the shore. Couples celebrating milestones return for the unhurried, color-soaked Caribbean romance.</p><div class="feats"><span>Beachfront casitas</span><span>Spa</span><span>Couples favorite</span></div></div>
+</article>
+<article class="card" data-region="island" data-budget="luxury" data-vibe="beach">
+  <div class="ph"><span class="tag">Boutique</span><img src="/images/best-hotels-belize.jpg" alt="Victoria House — South San Pedro, Ambergris Caye, Belize" loading="lazy"></div>
+  <div class="body"><h3>Victoria House</h3><div class="where">South San Pedro, Ambergris Caye</div>
+  <p>One of Ambergris Caye's quintessential luxury resorts, Victoria House spreads 42 rooms across manicured gardens and a private beach, with a 3,500-square-foot spa and on-site dive shop. From here you can reach Maya ruins, fishing flats, and the legendary Great Blue Hole.</p><div class="feats"><span>Private beach</span><span>Dive shop</span><span>Large spa</span></div></div>
+</article>
+<article class="card" data-region="island" data-budget="ultra" data-vibe="seclusion">
+  <div class="ph"><span class="tag">Private Island</span><img src="/images/belize-hotels.jpg" alt="Cayo Espanto — Private island off Ambergris, Belize" loading="lazy"></div>
+  <div class="body"><h3>Cayo Espanto</h3><div class="where">Private island off Ambergris</div>
+  <p>For total privacy, this private island, locally called Spirit Island, offers a handful of villas spaced around the shoreline so no two share a sightline. Each comes with its own beach, plunge pool, and dock; an overwater bungalow seals the all-inclusive escape.</p><div class="feats"><span>Private island</span><span>Plunge pools</span><span>All-inclusive</span></div></div>
+</article>
+<article class="card" data-region="island" data-budget="luxury" data-vibe="family">
+  <div class="ph"><span class="tag">Residences</span><img src="/images/book-hotel-belize.jpg" alt="Las Terrazas Resort & Residences — North Ambergris Caye, Belize" loading="lazy"></div>
+  <div class="body"><h3>Las Terrazas Resort & Residences</h3><div class="where">North Ambergris Caye</div>
+  <p>Spacious residences come with locally crafted furniture and full kitchens that can be stocked before you arrive, ideal for families or longer stays. A rooftop lounge, plus complimentary kayaks, Hobie cats, and paddleboards, keeps everyone on the water.</p><div class="feats"><span>Full kitchens</span><span>Free watersports</span><span>Rooftop lounge</span></div></div>
+</article>
+<article class="card" data-region="island" data-budget="mid" data-vibe="beach">
+  <div class="ph"><span class="tag">Beach Resort</span><img src="/images/belize-hotels.jpg" alt="Grand Caribe Belize — North of San Pedro Town, Belize" loading="lazy"></div>
+  <div class="body"><h3>Grand Caribe Belize</h3><div class="where">North of San Pedro Town</div>
+  <p>A modern beachfront resort just north of San Pedro, Grand Caribe balances an easy walk to town with quieter sand and pools. Sunset-facing terraces and nearby reef tours make it a dependable base for first-time island travelers.</p><div class="feats"><span>Pools</span><span>Near San Pedro</span><span>Beachfront</span></div></div>
+</article>
+<article class="card" data-region="coast" data-budget="luxury" data-vibe="beach">
+  <div class="ph"><span class="tag">Coppola</span><img src="/images/best-hotels-belize.jpg" alt="Turtle Inn — Placencia Peninsula, Belize" loading="lazy"></div>
+  <div class="body"><h3>Turtle Inn</h3><div class="where">Placencia Peninsula</div>
+  <p>Francis Ford Coppola's Turtle Inn stretches across a slim band of the Placencia Peninsula where sea and lagoon meet. Roughly 25 thatched cottages blend Caribbean and Balinese craft, handcrafted wood, and open-air living; an add-on stay on private Coral Caye is the encore.</p><div class="feats"><span>Thatched villas</span><span>Lagoon + sea</span><span>Wine list</span></div></div>
+</article>
+<article class="card" data-region="coast" data-budget="luxury" data-vibe="romance">
+  <div class="ph"><span class="tag">Villa Resort</span><img src="/images/hotels-belize.jpg" alt="Chabil Mar Villas — Placencia Village, Belize" loading="lazy"></div>
+  <div class="body"><h3>Chabil Mar Villas</h3><div class="where">Placencia Village</div>
+  <p>Consistently celebrated, Chabil Mar pairs beachfront villas with two infinity pools and a kitchen that sources local snapper, in-season lobster, and regional produce. A dive shop and tour desk put reef diving, kayaking, and sailing within easy reach.</p><div class="feats"><span>Infinity pools</span><span>Local cuisine</span><span>Tour desk</span></div></div>
+</article>
+<article class="card" data-region="coast" data-budget="luxury" data-vibe="wellness">
+  <div class="ph"><span class="tag">Wellness</span><img src="/images/book-hotel-belize.jpg" alt="Naia Resort & Spa — Placencia Peninsula, Belize" loading="lazy"></div>
+  <div class="body"><h3>Naia Resort & Spa</h3><div class="where">Placencia Peninsula</div>
+  <p>A wellness-forward beachfront retreat of plunge-pool casitas and a destination spa, Naia draws travelers who want yoga, sound healing, and reef access in the same day. The pace here is restorative, the design quietly upscale.</p><div class="feats"><span>Destination spa</span><span>Plunge pools</span><span>Yoga</span></div></div>
+</article>
+<article class="card" data-region="coast" data-budget="mid" data-vibe="walkable">
+  <div class="ph"><span class="tag">Boutique 8-room</span><img src="/images/hotel-belize.jpg" alt="Ocean Breeze Beach Resort — Placencia Sidewalk, Belize" loading="lazy"></div>
+  <div class="body"><h3>Ocean Breeze Beach Resort</h3><div class="where">Placencia Sidewalk</div>
+  <p>A rare walkable luxury, this intimate 8-room resort sits right on the Placencia Sidewalk, steps from restaurants, beach bars, and tour departures. It suits travelers who want authentic village life without trading away comfort.</p><div class="feats"><span>Walk to village</span><span>Personal service</span><span>Beachfront</span></div></div>
+</article>
+<article class="card" data-region="jungle" data-budget="luxury" data-vibe="adventure">
+  <div class="ph"><span class="tag">Jungle Lodge</span><img src="/images/belize-hotels.jpg" alt="The Lodge at Chaa Creek — San Ignacio, Cayo, Belize" loading="lazy"></div>
+  <div class="body"><h3>The Lodge at Chaa Creek</h3><div class="where">San Ignacio, Cayo</div>
+  <p>A landmark luxury jungle lodge on a private reserve outside San Ignacio, Chaa Creek wins loyalty for large, comfortable rooms, well-kept grounds, and standout service. River trails, a butterfly farm, and easy access to Maya sites anchor the experience.</p><div class="feats"><span>Private reserve</span><span>Maya tours</span><span>River trails</span></div></div>
+</article>
+<article class="card" data-region="jungle" data-budget="luxury" data-vibe="adventure">
+  <div class="ph"><span class="tag">Small Luxury Hotels</span><img src="/images/best-hotels-belize.jpg" alt="Ka'ana Resort — San Ignacio, Cayo, Belize" loading="lazy"></div>
+  <div class="body"><h3>Ka'ana Resort</h3><div class="where">San Ignacio, Cayo</div>
+  <p>A member of Small Luxury Hotels of the World, Ka'ana sets refined casitas amid gardens near San Ignacio. Expert guides run trips to Caracol, the ATM cave, and even Tikal across the Guatemala border, making it a true adventure base.</p><div class="feats"><span>Caracol & ATM tours</span><span>Gardens</span><span>Fine dining</span></div></div>
+</article>
+<article class="card" data-region="jungle" data-budget="luxury" data-vibe="seclusion">
+  <div class="ph"><span class="tag">Coppola</span><img src="/images/hotels-belize.jpg" alt="Blancaneaux Lodge — Mountain Pine Ridge, Belize" loading="lazy"></div>
+  <div class="body"><h3>Blancaneaux Lodge</h3><div class="where">Mountain Pine Ridge</div>
+  <p>Coppola's first Belize hideaway tucks 20 cabañas and villas into the pines and waterfalls of Mountain Pine Ridge. Two restaurants serve Guatemalan and southern Italian cuisine, much of it from the organic Garden Spot grown on-site.</p><div class="feats"><span>Waterfalls</span><span>Organic garden</span><span>Cabañas</span></div></div>
+</article>
+<article class="card" data-region="jungle" data-budget="luxury" data-vibe="eco">
+  <div class="ph"><span class="tag">Eco Canopy</span><img src="/images/book-hotel-belize.jpg" alt="Copal Tree Lodge — Punta Gorda, Toledo, Belize" loading="lazy"></div>
+  <div class="body"><h3>Copal Tree Lodge</h3><div class="where">Punta Gorda, Toledo</div>
+  <p>Hidden in the treetops above Punta Gorda, Copal Tree's elevated canopy suites overlook rainforest, mountains, and sea. Sustainability is the soul here, from an heirloom organic farm to rainwater catchment and an agroforestry program.</p><div class="feats"><span>Canopy suites</span><span>Organic farm</span><span>Sustainable</span></div></div>
+</article>
+<article class="card" data-region="jungle" data-budget="ultra" data-vibe="seclusion">
+  <div class="ph"><span class="tag">Intimate</span><img src="/images/hotel-belize.jpg" alt="Villa Massis — 10 min from San Ignacio, Belize" loading="lazy"></div>
+  <div class="body"><h3>Villa Massis</h3><div class="where">10 min from San Ignacio</div>
+  <p>A rare jungle-set luxury find ten minutes from San Ignacio, Villa Massis keeps room counts tiny so service feels personal. Guests get extraordinary access to Caracol, the ATM cave, and the wild rivers of Mountain Pine Ridge, then quiet nights under unbroken stars.</p><div class="feats"><span>Intimate</span><span>Maya access</span><span>Stargazing</span></div></div>
+</article>
+<article class="card" data-region="jungle" data-budget="luxury" data-vibe="seclusion">
+  <div class="ph"><span class="tag">Private Caye</span><img src="/images/belize-hotels.jpg" alt="Coco Plum Island Resort — Private caye near Dangriga, Belize" loading="lazy"></div>
+  <div class="body"><h3>Coco Plum Island Resort</h3><div class="where">Private caye near Dangriga</div>
+  <p>For an island all to yourself, Coco Plum claims 16 acres of palms and white sand a short boat ride from Dangriga. Adults-only and effectively all-inclusive, it delivers the castaway fantasy with reef snorkeling at the doorstep.</p><div class="feats"><span>Private caye</span><span>All-inclusive</span><span>Adults-only</span></div></div>
+</article>
+    </div>
+    <p id="noMatch" style="display:none;text-align:center;margin-top:30px;font-family:var(--util);color:var(--coral)">No exact match &mdash; try loosening one filter. Every region rewards a flexible traveler.</p>
+  </div>
+</section>
+
+<!-- IN-TEXT AD: Eye To Ad Media -->
+<section class="section tint" style="padding-top:0">
+  <div class="wrap">
+    <div class="adbox reveal">
+      <img src="/images/belize-advertising-agency.png" alt="Eye To Ad Media — Belize advertising & SEO agency">
+      <div class="ad-c">
+        <div class="ad-k">Featured Partner</div>
+        <h4>Run a hotel, tour, or restaurant in Belize?</h4>
+        <p>This guide is built and ranked by <strong>Eye To Ad Media</strong>. Through our local arm, <a href="https://belizeseoagency.com" rel="noopener">Belize SEO Agency</a>, we put properties like yours in front of travelers searching for exactly what you offer.</p>
+        <a class="adlink" href="https://belizeseoagency.com" rel="noopener">Get found in Belize &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOTEL MATCHER QUIZ -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
+      <span class="eyebrow">3-question tool</span>
+      <h2>Not sure where to start? Let's match you</h2>
+      <p style="margin-left:auto;margin-right:auto">Answer three quick questions and we'll point you to the region and a real property that fits.</p>
+    </div>
+    <div class="matcher reveal">
+      <div class="q" data-key="setting"><h4>1. What's calling you?</h4>
+        <div class="opts">
+          <button data-v="island">Turquoise water &amp; reef</button>
+          <button data-v="coast">A walkable beach village</button>
+          <button data-v="jungle">Jungle, caves &amp; ruins</button>
+        </div></div>
+      <div class="q" data-key="who"><h4>2. Who's coming?</h4>
+        <div class="opts">
+          <button data-v="romance">Just the two of us</button>
+          <button data-v="family">Family</button>
+          <button data-v="seclusion">I want total privacy</button>
+        </div></div>
+      <div class="q" data-key="spend"><h4>3. Comfort level?</h4>
+        <div class="opts">
+          <button data-v="mid">Smart mid-range</button>
+          <button data-v="luxury">Full luxury</button>
+          <button data-v="ultra">Spare no expense</button>
+        </div></div>
+      <div class="result" id="matchResult"></div>
+    </div>
+  </div>
+</section>
+<div class="wave"  aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<g class="w-move"><path fill="#04323a" d="M0,40 C180,80 360,0 720,40 C1080,80 1260,10 1440,40 L1440,90 L0,90 Z"></path>
+<path fill="#04323a" d="M1440,40 C1620,80 1800,0 2160,40 C2520,80 2700,10 2880,40 L2880,90 L1440,90 Z"></path></g></svg></div>
+
+<!-- REEF AUTHORITY (deep) -->
+<section class="section deep">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Why you came</span>
+      <h2>The reef, the Blue Hole &amp; the Maya world out your door</h2>
+      <p>Picking a hotel in Belize is really about picking your front yard. Here's what's actually within reach.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><div class="n">#2</div><div class="l">Largest barrier reef on Earth &mdash; a UNESCO World Heritage Site, under a mile off Ambergris Caye.</div></div>
+      <div class="stat"><div class="n">984ft</div><div class="l">Across &amp; 410ft deep: the Great Blue Hole, ~1.5 hours by boat. Dive it, or fly over for the full sapphire view.</div></div>
+      <div class="stat"><div class="n">5</div><div class="l">Maya wonders within a day: Caracol, Xunantunich, Cahal Pech, the ATM cave &amp; Tikal across the border.</div></div>
+      <div class="stat"><div class="n">2</div><div class="l">Reef icons every visitor should snorkel: Hol Chan Marine Reserve &amp; Shark Ray Alley, plus rising-star Mexico Rocks.</div></div>
+    </div>
+    <div class="prose reveal" style="color:rgba(246,239,226,.9);margin-top:36px">
+      <p>Furthermore, the right base shrinks the distance to all of it. Stay on Ambergris Caye and Hol Chan, where you'll drift over coral gardens alongside rays, eels, and the occasional manatee, is a short boat ride away; Shark Ray Alley, where nurse sharks gather, is the natural second stop. Choose Cayo instead and you trade fins for hiking boots, reaching the towering temples of Caracol or wading into the Actun Tunichil Muknal cave with a guide. In other words, your hotel isn't just a bed. Rather, it's the trailhead for the Belize you remember.</p>
+    </div>
+  </div>
+</section>
+<div class="wave" style="transform:scaleY(-1)" aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<g class="w-move"><path fill="#04323a" d="M0,40 C180,80 360,0 720,40 C1080,80 1260,10 1440,40 L1440,90 L0,90 Z"></path>
+<path fill="#04323a" d="M1440,40 C1620,80 1800,0 2160,40 C2520,80 2700,10 2880,40 L2880,90 L1440,90 Z"></path></g></svg></div>
+
+<!-- COAST section (anchor) -->
+<section class="section tint" id="coast">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Placencia Peninsula</span>
+      <h2>Best beach hotels on the Placencia coast</h2>
+      <p>If your ideal Belize is mainland sand, a slow village, and reef trips that leave from the dock, the Placencia Peninsula is your match. Moreover, it's the easiest place to fold jungle day-trips into a beach week.</p>
+    </div>
+    <div class="grid">
+<article class="card" data-region="coast" data-budget="luxury" data-vibe="beach">
+  <div class="ph"><span class="tag">Coppola</span><img src="/images/best-hotels-belize.jpg" alt="Turtle Inn — Placencia Peninsula, Belize" loading="lazy"></div>
+  <div class="body"><h3>Turtle Inn</h3><div class="where">Placencia Peninsula</div>
+  <p>Francis Ford Coppola's Turtle Inn stretches across a slim band of the Placencia Peninsula where sea and lagoon meet. Roughly 25 thatched cottages blend Caribbean and Balinese craft, handcrafted wood, and open-air living; an add-on stay on private Coral Caye is the encore.</p><div class="feats"><span>Thatched villas</span><span>Lagoon + sea</span><span>Wine list</span></div></div>
+</article>
+<article class="card" data-region="coast" data-budget="luxury" data-vibe="romance">
+  <div class="ph"><span class="tag">Villa Resort</span><img src="/images/hotels-belize.jpg" alt="Chabil Mar Villas — Placencia Village, Belize" loading="lazy"></div>
+  <div class="body"><h3>Chabil Mar Villas</h3><div class="where">Placencia Village</div>
+  <p>Consistently celebrated, Chabil Mar pairs beachfront villas with two infinity pools and a kitchen that sources local snapper, in-season lobster, and regional produce. A dive shop and tour desk put reef diving, kayaking, and sailing within easy reach.</p><div class="feats"><span>Infinity pools</span><span>Local cuisine</span><span>Tour desk</span></div></div>
+</article>
+<article class="card" data-region="coast" data-budget="luxury" data-vibe="wellness">
+  <div class="ph"><span class="tag">Wellness</span><img src="/images/book-hotel-belize.jpg" alt="Naia Resort & Spa — Placencia Peninsula, Belize" loading="lazy"></div>
+  <div class="body"><h3>Naia Resort & Spa</h3><div class="where">Placencia Peninsula</div>
+  <p>A wellness-forward beachfront retreat of plunge-pool casitas and a destination spa, Naia draws travelers who want yoga, sound healing, and reef access in the same day. The pace here is restorative, the design quietly upscale.</p><div class="feats"><span>Destination spa</span><span>Plunge pools</span><span>Yoga</span></div></div>
+</article>
+<article class="card" data-region="coast" data-budget="mid" data-vibe="walkable">
+  <div class="ph"><span class="tag">Boutique 8-room</span><img src="/images/hotel-belize.jpg" alt="Ocean Breeze Beach Resort — Placencia Sidewalk, Belize" loading="lazy"></div>
+  <div class="body"><h3>Ocean Breeze Beach Resort</h3><div class="where">Placencia Sidewalk</div>
+  <p>A rare walkable luxury, this intimate 8-room resort sits right on the Placencia Sidewalk, steps from restaurants, beach bars, and tour departures. It suits travelers who want authentic village life without trading away comfort.</p><div class="feats"><span>Walk to village</span><span>Personal service</span><span>Beachfront</span></div></div>
+</article>
+    </div>
+  </div>
+</section>
+
+<!-- WHEN TO VISIT prose -->
+<section class="section">
+  <div class="wrap prose reveal">
+    <span class="eyebrow">Plan it right</span>
+    <h2 style="font-size:clamp(1.9rem,4vw,2.8rem);margin:.4rem 0 1rem">When to visit, and how to get there</h2>
+    <p>Timing shapes everything in Belize. Generally, the dry season runs from late November through May, delivering sunny skies, calm seas, and the clearest reef visibility, which is also why it's peak season and the moment to book early. Conversely, the green season from June to November trades the occasional storm for thinner crowds and noticeably softer rates, a fair deal if you're flexible.</p>
+    <p>Getting to the islands is half the fun. From Belize City, a 15-to-30-minute hop on Tropic Air or Maya Island Air (roughly US$80) skims straight over the reef to San Pedro. Alternatively, a water taxi makes the run in about 75 to 90 minutes for around US$30 one way, easier on the wallet and still scenic. Once you've landed, golf carts, bikes, and resort ferries handle the rest.</p>
+    <p>For deeper destination planning, the <a href="https://www.travelbelize.org" rel="nofollow noopener">official Belize tourism site</a> is a solid companion, and you can cross-check real guest reviews on <a href="https://www.tripadvisor.com/Hotels-g291959-Belize-Hotels.html" rel="nofollow noopener">Tripadvisor</a>. When you're ready to compare specific properties, jump to our <a href="/belize-island-resorts.html">island resorts</a> and <a href="/belize-jungle-lodges.html">jungle lodges</a> guides.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section tint" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Quick answers</span>
+      <h2>Belize hotels: frequently asked questions</h2>
+      <p>Written for the questions travelers actually ask, and for voice assistants that read answers aloud.</p>
+    </div>
+    <div class="faq reveal">
+      <details open><summary>What is the best area to stay in Belize?</summary><p>It depends on your trip. Ambergris Caye and San Pedro suit reef snorkeling, dining, and nightlife; the Placencia Peninsula offers long mainland beaches and a walkable village; and the Cayo District around San Ignacio is the base for jungle lodges, caves, and Maya ruins. Many travelers split a week between an island and the jungle for the best of both.</p></details>
+      <details><summary>What are the best luxury hotels in Belize?</summary><p>Top-rated luxury stays include Alaia Belize (Autograph Collection), Matachica, and Victoria House on Ambergris Caye; Turtle Inn and Chabil Mar in Placencia; and The Lodge at Chaa Creek, Ka'ana, and Blancaneaux in the Cayo jungle. For a private island, look at Cayo Espanto or Coco Plum.</p></details>
+      <details><summary>When is the best time to visit Belize?</summary><p>The dry season from late November through May brings sunny days, calm seas, and the clearest reef visibility, and it's peak season. June through November is the wet season, which means fewer crowds and lower rates, with occasional tropical storms.</p></details>
+      <details><summary>How do you get to the islands in Belize?</summary><p>From Belize City you can fly to San Pedro on Tropic Air or Maya Island Air in about 15 to 30 minutes for roughly US$80, with sweeping reef views, or take a water taxi in about 75 to 90 minutes for around US$30 one way.</p></details>
+      <details><summary>Does Belize have all-inclusive resorts?</summary><p>Yes, though they're less common than elsewhere in the Caribbean. Private-island resorts such as Cayo Espanto and Coco Plum run all-inclusive, while many travelers prefer boutique beachfront hotels for flexibility and access to local restaurants.</p></details>
+      <details><summary>Is Belize a safe destination for tourists?</summary><p>As a whole, Belize is considered a safe destination for travelers, particularly in the resort areas of Ambergris Caye, Placencia, and San Ignacio. As anywhere, use normal precautions, keep valuables secure, and rely on licensed guides and your resort's tour desk for excursions.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- second in-text ad, different angle -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="adbox reveal" style="grid-template-columns:1fr 160px">
+      <div class="ad-c">
+        <div class="ad-k">Global network</div>
+        <h4>One team, destinations worldwide</h4>
+        <p>Best Hotels Belize is part of the <a href="https://www.eyetoad.com" rel="noopener">Eye To Ad Media</a> network of destination and local-business guides. From Belize to the Caribbean and beyond, we build the resources travelers trust and the rankings businesses need.</p>
+        <a class="adlink" href="https://belizeseoagency.com" rel="noopener">Promote your Belize business &rarr;</a>
+      </div>
+      <img src="/images/belize-advertising-agency.png" alt="Eye To Ad Media global SEO network">
+    </div>
+  </div>
+</section>
+
+<footer class="foot"><div class="wrap">
+<div class="cols">
+  <div>
+    <div class="brandline">Best Hotels Belize</div>
+    <p style="font-size:.95rem;max-width:280px">Your independent guide to the finest island resorts, beach villas, and jungle lodges along the Belize Barrier Reef and beyond.</p>
+    <p class="net" style="margin-top:14px"><span>An <a href="https://www.eyetoad.com" rel="noopener">Eye To Ad Media</a> travel resource &mdash; part of a global SEO &amp; destination network.</span></p>
+  </div>
+  <div>
+    <h5>Explore</h5>
+    <a href="/">Best Hotels in Belize</a>
+    <a href="/belize-island-resorts.html">Belize Island Resorts</a>
+    <a href="/belize-jungle-lodges.html">Belize Jungle Lodges</a>
+    <a href="/#finder">Hotel Finder Tool</a>
+    <a href="/#faq">Travel FAQ</a>
+  </div>
+  <div>
+    <h5>Belize Resources</h5>
+    <a href="https://www.travelbelize.org" rel="nofollow noopener">Official Belize Tourism</a>
+    <a href="https://www.tripadvisor.com/Hotels-g291959-Belize-Hotels.html" rel="nofollow noopener">Belize Hotels on Tripadvisor</a>
+    <a href="https://whc.unesco.org/en/list/764/" rel="nofollow noopener">Barrier Reef (UNESCO)</a>
+    <a href="https://belizeseoagency.com" rel="noopener">Belize SEO Agency</a>
+  </div>
+  <div>
+    <h5>Our Network</h5>
+    <a href="https://www.eyetoad.com" rel="noopener">Eye To Ad Media</a>
+    <a href="https://belizeseoagency.com" rel="noopener">Belize SEO Agency</a>
+    <a href="https://www.searchconverts.com" rel="noopener">Search Converts</a>
+    <a href="/sitemap.html">HTML Sitemap</a>
+  </div>
+</div>
+<div class="legal">
+  <span>&copy; 2026 Best Hotels Belize. Built &amp; optimized by <a href="https://www.eyetoad.com" rel="noopener">Eye To Ad Media</a>.</span>
+  <span>Independent guide &mdash; rates &amp; availability via each resort.</span>
+</div>
+</div></footer>
+<script>
+// nav scroll + burger
+const nav=document.querySelector('.nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));
+const burger=document.querySelector('.burger'),links=document.querySelector('.nav-links');
+if(burger){burger.addEventListener('click',()=>links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));}
+// reveal on scroll
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.14});
+document.querySelectorAll('.reveal,.card').forEach((el,i)=>{el.style.transitionDelay=(i%3*70)+'ms';io.observe(el)});
+
+// ---- HERO FINDER ----
+const grid=document.getElementById('hotelGrid');
+const cards=[...grid.querySelectorAll('.card')];
+const hint=document.getElementById('f-hint'),noMatch=document.getElementById('noMatch');
+function applyFilter(){
+  const r=document.getElementById('f-region').value,
+        v=document.getElementById('f-vibe').value,
+        b=document.getElementById('f-budget').value;
+  let n=0;
+  cards.forEach(c=>{
+    const ok=(!r||c.dataset.region===r)&&(!v||c.dataset.vibe===v)&&(!b||c.dataset.budget===b);
+    c.classList.toggle('hidden',!ok); if(ok)n++;
+  });
+  noMatch.style.display=n?'none':'block';
+  hint.textContent=n?(n+' match'+(n>1?'es':'')+' below \u2014 scroll down to your shortlist.'):'No exact match \u2014 try loosening a filter.';
+  document.getElementById('hotels').scrollIntoView({behavior:'smooth'});
+}
+document.getElementById('f-go').addEventListener('click',applyFilter);
+
+// ---- MATCHER QUIZ ----
+const pick={};
+const props={"Alaia Belize, Autograph Collection": {"region": "island", "vibe": "beach", "budget": "luxury", "url": "/belize-island-resorts.html", "where": "San Pedro, Ambergris Caye"}, "Matachica Resort & Spa": {"region": "island", "vibe": "romance", "budget": "luxury", "url": "/belize-island-resorts.html", "where": "North Ambergris Caye"}, "Victoria House": {"region": "island", "vibe": "beach", "budget": "luxury", "url": "/belize-island-resorts.html", "where": "South San Pedro, Ambergris Caye"}, "Cayo Espanto": {"region": "island", "vibe": "seclusion", "budget": "ultra", "url": "/belize-island-resorts.html", "where": "Private island off Ambergris"}, "Las Terrazas Resort & Residences": {"region": "island", "vibe": "family", "budget": "luxury", "url": "/belize-island-resorts.html", "where": "North Ambergris Caye"}, "Grand Caribe Belize": {"region": "island", "vibe": "beach", "budget": "mid", "url": "/belize-island-resorts.html", "where": "North of San Pedro Town"}, "Turtle Inn": {"region": "coast", "vibe": "beach", "budget": "luxury", "url": "/#coast", "where": "Placencia Peninsula"}, "Chabil Mar Villas": {"region": "coast", "vibe": "romance", "budget": "luxury", "url": "/#coast", "where": "Placencia Village"}, "Naia Resort & Spa": {"region": "coast", "vibe": "wellness", "budget": "luxury", "url": "/#coast", "where": "Placencia Peninsula"}, "Ocean Breeze Beach Resort": {"region": "coast", "vibe": "walkable", "budget": "mid", "url": "/#coast", "where": "Placencia Sidewalk"}, "The Lodge at Chaa Creek": {"region": "jungle", "vibe": "adventure", "budget": "luxury", "url": "/belize-jungle-lodges.html", "where": "San Ignacio, Cayo"}, "Ka'ana Resort": {"region": "jungle", "vibe": "adventure", "budget": "luxury", "url": "/belize-jungle-lodges.html", "where": "San Ignacio, Cayo"}, "Blancaneaux Lodge": {"region": "jungle", "vibe": "seclusion", "budget": "luxury", "url": "/belize-jungle-lodges.html", "where": "Mountain Pine Ridge"}, "Copal Tree Lodge": {"region": "jungle", "vibe": "eco", "budget": "luxury", "url": "/belize-jungle-lodges.html", "where": "Punta Gorda, Toledo"}, "Villa Massis": {"region": "jungle", "vibe": "seclusion", "budget": "ultra", "url": "/belize-jungle-lodges.html", "where": "10 min from San Ignacio"}, "Coco Plum Island Resort": {"region": "jungle", "vibe": "seclusion", "budget": "luxury", "url": "/belize-jungle-lodges.html", "where": "Private caye near Dangriga"}};
+document.querySelectorAll('.matcher .q').forEach(q=>{
+  q.querySelectorAll('.opts button').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      q.querySelectorAll('button').forEach(b=>b.classList.remove('sel'));
+      btn.classList.add('sel'); pick[q.dataset.key]=btn.dataset.v; tryMatch();
+    });
+  });
+});
+function tryMatch(){
+  if(!(pick.setting&&pick.who&&pick.spend))return;
+  const order=[pick.spend,'luxury','mid','ultra'];
+  let best=null,bestScore=-1;
+  for(const[name,p]of Object.entries(props)){
+    let s=0;
+    if(p.region===pick.setting)s+=3;
+    if(p.vibe===pick.who)s+=2;
+    if(p.budget===pick.spend)s+=2; else if(p.budget==='luxury')s+=1;
+    if(s>bestScore){bestScore=s;best={name,...p};}
+  }
+  const labels={island:'the islands & cayes',coast:'the Placencia coast',jungle:'the jungle & Cayo'};
+  const el=document.getElementById('matchResult');
+  el.innerHTML='<h4>'+best.name+'</h4><p>Based in '+best.where+', it\u2019s our pick for '+labels[pick.setting]+'. '+
+    '<a href="'+best.url+'">See it and similar stays \u2192</a></p>';
+  el.classList.add('show');
+}
+
+</script>
+</body></html>
