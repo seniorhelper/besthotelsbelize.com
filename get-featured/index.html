@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Belize Hotels &amp; Lodges: Get Featured | Best Hotels Belize</title>
+<meta name="description" content="Feature your Belize hotel, island resort or jungle lodge for $39/month: top placement, a Featured badge, a photo and a direct booking link.">
+<link rel="canonical" href="https://besthotelsbelize.com/get-featured/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Belize Hotels &amp; Lodges: Get Featured | Best Hotels Belize">
+<meta property="og:description" content="Feature your Belize hotel, island resort or jungle lodge for $39/month: top placement, a Featured badge, a photo and a direct booking link.">
+<meta property="og:url" content="https://besthotelsbelize.com/get-featured/">
+<meta property="og:image" content="https://besthotelsbelize.com/images/best-hotels-belize.jpg">
+<meta property="og:site_name" content="Best Hotels Belize">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/images/belize-best-hotels-favicon.png">
+<link rel="apple-touch-icon" href="/images/belize-best-hotels-favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sea:#0fb6c4; --sea-deep:#067a8c; --abyss:#04323a; --ink:#062a30;
+  --sand:#f6efe2; --sand-warm:#efe2cb; --coral:#ff6b5e; --mango:#ffc043;
+  --jade:#0f8a4d; --paper:#fffdf8; --line:rgba(6,42,48,.12);
+  --glass:rgba(255,253,248,.10); --glass-line:rgba(255,255,255,.35);
+  --shadow:0 18px 50px -22px rgba(4,50,58,.55);
+  --display:"Fraunces",Georgia,serif; --body:"Outfit",system-ui,sans-serif;
+  --util:"Space Grotesk",ui-monospace,monospace;
+  --rad:18px; --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);
+  line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.08;font-weight:600;letter-spacing:-.01em}
+a{color:var(--sea-deep);text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.eyebrow{font-family:var(--util);text-transform:uppercase;letter-spacing:.22em;
+  font-size:.72rem;font-weight:600;color:var(--sea-deep)}
+
+/* ---- NAV : solid white header bar ---- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:box-shadow .3s;
+  padding:8px 0;background:#fff;box-shadow:0 1px 0 var(--line)}
+.nav.scrolled{box-shadow:0 6px 24px -14px rgba(4,50,58,.4)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand img{width:230px;max-width:48vw;height:auto;display:block}
+.nav-links{display:flex;align-items:center;gap:8px}
+.nav-links a.glass{padding:9px 16px;border-radius:999px;font-weight:500;font-size:.95rem;
+  color:var(--ink);background:rgba(15,182,196,.08);border:1px solid rgba(6,42,48,.12);transition:.25s}
+.nav-links a.glass:hover{background:var(--sea-deep);border-color:transparent;color:#fff;transform:translateY(-1px)}
+.nav-links a.cta{background:var(--coral);border-color:transparent;color:#fff;font-weight:600}
+.nav-links a.cta:hover{background:#ff5244}
+.burger{display:none;flex-direction:column;gap:5px;background:rgba(15,182,196,.10);
+  border:1px solid rgba(6,42,48,.14);border-radius:12px;padding:11px;cursor:pointer}
+.burger span{width:22px;height:2px;background:var(--ink);transition:.3s}
+
+/* ---- HERO + VIDEO ---- */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;
+  justify-content:center;text-align:center;color:#fff;overflow:hidden;
+  margin-top:92px}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(4,50,58,.46) 0%,rgba(4,50,58,.30) 40%,rgba(4,50,58,.74) 100%)}
+.hero-in{max-width:920px;padding:60px 22px 70px}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);text-shadow:0 4px 30px rgba(0,0,0,.4)}
+.hero h1 em{font-style:italic;color:var(--mango)}
+.hero p.lede{font-size:clamp(1.05rem,2.1vw,1.35rem);max-width:640px;margin:18px auto 0;
+  color:rgba(255,255,255,.94);text-shadow:0 2px 14px rgba(0,0,0,.4)}
+.hero .eyebrow{color:var(--mango)}
+
+/* ---- HERO SEARCH TOOL ---- */
+.finder{margin:34px auto 0;max-width:760px;background:rgba(255,253,248,.14);
+  border:1px solid var(--glass-line);border-radius:22px;padding:18px;backdrop-filter:blur(16px);
+  box-shadow:var(--shadow)}
+.finder-row{display:flex;gap:10px;flex-wrap:wrap}
+.finder select,.finder input{flex:1;min-width:150px;padding:14px 15px;border-radius:13px;
+  border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.92);color:var(--ink);
+  font-family:var(--body);font-size:1rem;font-weight:500}
+.finder button{padding:14px 26px;border:none;border-radius:13px;background:var(--coral);
+  color:#fff;font-weight:700;font-size:1rem;cursor:pointer;font-family:var(--body);transition:.25s}
+.finder button:hover{background:#ff5244;transform:translateY(-1px)}
+.finder-hint{margin-top:10px;font-size:.82rem;color:rgba(255,255,255,.86);font-family:var(--util)}
+
+/* ---- WAVE DIVIDER ---- */
+.wave{display:block;width:100%;height:auto;line-height:0;margin:-1px 0}
+.wave svg{display:block;width:100%;height:110px}
+.wave .w-move{animation:waveShift 16s linear infinite}
+.wave .w-back{animation-duration:24s;animation-direction:reverse}
+.wave .w-front{animation-duration:14s}
+@keyframes waveShift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---- ambient water line (full page accent) ---- */
+.aqua-line{position:relative;height:6px;background:
+  linear-gradient(90deg,var(--sea) 0%,var(--mango) 25%,var(--coral) 50%,var(--sea) 75%,var(--mango) 100%);
+  background-size:200% 100%;animation:aquaSlide 8s linear infinite}
+@keyframes aquaSlide{from{background-position:0 0}to{background-position:200% 0}}
+
+/* ---- SECTIONS ---- */
+.section{padding:84px 0}
+.section.tint{background:linear-gradient(180deg,var(--sand) 0%,var(--sand-warm) 100%)}
+.section.deep{background:radial-gradient(120% 120% at 80% 0%,#0a4e5a 0%,var(--abyss) 70%);color:var(--sand)}
+.section.deep h2,.section.deep h3{color:#fff}
+.section.deep .eyebrow{color:var(--mango)}
+.sec-head{max-width:680px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(2rem,4.4vw,3.1rem);margin:.4rem 0 .6rem}
+.sec-head p{font-size:1.08rem;color:rgba(6,42,48,.78)}
+.section.deep .sec-head p{color:rgba(246,239,226,.86)}
+
+/* ---- HOTEL CARDS ---- */
+.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--rad);
+  overflow:hidden;box-shadow:0 10px 34px -24px rgba(4,50,58,.5);transition:.35s;
+  display:flex;flex-direction:column;opacity:0;transform:translateY(24px)}
+.card.in{opacity:1;transform:none}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--sea)}
+.card .ph{position:relative;aspect-ratio:16/10;background:#0a4e5a;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.card:hover .ph img{transform:scale(1.06)}
+.card .tag{position:absolute;top:12px;left:12px;background:rgba(255,253,248,.94);
+  color:var(--ink);font-family:var(--util);font-size:.68rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.12em;padding:6px 11px;border-radius:999px}
+.card .body{padding:20px 20px 22px;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:1.4rem;margin-bottom:4px}
+.card .where{font-family:var(--util);font-size:.78rem;color:var(--sea-deep);
+  text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
+.card p{font-size:.97rem;color:rgba(6,42,48,.82);flex:1}
+.card .feats{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.card .feats span{font-size:.74rem;background:rgba(15,182,196,.12);color:var(--sea-deep);
+  padding:4px 10px;border-radius:999px;font-weight:600}
+.card.hidden{display:none}
+
+/* ---- MATCHER QUIZ ---- */
+.matcher{background:var(--paper);border:1px solid var(--line);border-radius:24px;
+  padding:34px;box-shadow:var(--shadow);max-width:760px;margin:0 auto}
+.matcher .q{margin-bottom:22px}
+.matcher .q h4{font-family:var(--body);font-weight:700;font-size:1.02rem;margin-bottom:12px}
+.opts{display:flex;flex-wrap:wrap;gap:9px}
+.opts button{padding:10px 16px;border-radius:999px;border:1.5px solid var(--line);
+  background:#fff;color:var(--ink);font-family:var(--body);font-weight:500;cursor:pointer;transition:.2s}
+.opts button:hover{border-color:var(--sea)}
+.opts button.sel{background:var(--sea-deep);color:#fff;border-color:transparent}
+.matcher .result{margin-top:8px;padding:22px;border-radius:16px;background:linear-gradient(135deg,#073b44,#0a5a68);
+  color:#fff;display:none}
+.matcher .result.show{display:block;animation:pop .4s ease}
+@keyframes pop{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+.matcher .result h4{font-family:var(--display);font-size:1.5rem;color:var(--mango);margin-bottom:6px}
+.matcher .result a{color:#fff;font-weight:700;text-decoration:underline}
+
+/* ---- AUTHORITY STAT STRIP ---- */
+.stats{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.stat{padding:22px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14)}
+.stat .n{font-family:var(--display);font-size:2.4rem;color:var(--mango);line-height:1}
+.stat .l{font-size:.92rem;color:rgba(246,239,226,.86);margin-top:6px}
+
+/* ---- IN-TEXT AD (full-size creative) ---- */
+.adband{margin:0 auto;max-width:920px}
+.adband .adlabel{font-family:var(--util);font-size:.7rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--coral);font-weight:600;text-align:center;margin-bottom:12px}
+.adband a.adimg{display:block;border-radius:18px;overflow:hidden;border:1px solid var(--line);
+  box-shadow:var(--shadow);transition:.35s}
+.adband a.adimg:hover{transform:translateY(-4px);box-shadow:0 28px 60px -26px rgba(4,50,58,.6)}
+.adband a.adimg img{width:100%;height:auto;display:block}
+.adband .adcap{text-align:center;margin-top:16px;max-width:640px;margin-left:auto;margin-right:auto}
+.adband .adcap h4{font-size:1.4rem;margin-bottom:6px}
+.adband .adcap p{font-size:1rem;color:rgba(6,42,48,.82)}
+.adband .adcap a.adlink{display:inline-block;margin-top:10px;font-weight:700;
+  font-family:var(--util);font-size:.9rem;color:var(--coral)}
+
+/* ---- PROSE ---- */
+.prose{max-width:760px}
+.prose p{margin:0 0 18px;font-size:1.07rem;color:rgba(6,42,48,.86)}
+.prose h3{font-size:1.7rem;margin:34px 0 12px}
+.prose a{font-weight:600;border-bottom:1.5px solid rgba(15,182,196,.4)}
+
+/* ---- REGION SPLIT (home) ---- */
+.regions{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.region{position:relative;border-radius:20px;overflow:hidden;min-height:300px;display:flex;
+  align-items:flex-end;color:#fff;box-shadow:var(--shadow)}
+.region img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:.6s}
+.region:hover img{transform:scale(1.07)}
+.region::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(4,50,58,0) 30%,rgba(4,50,58,.85) 100%)}
+.region .rc{padding:24px}
+.region h3{font-size:1.7rem;color:#fff}
+.region p{font-size:.95rem;color:rgba(255,255,255,.9);margin:6px 0 0}
+.region .go{display:inline-block;margin-top:12px;font-family:var(--util);font-size:.8rem;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--mango);font-weight:600}
+
+/* ---- FAQ ---- */
+.faq{max-width:840px}
+.faq details{border:1px solid var(--line);border-radius:14px;padding:0 22px;margin-bottom:12px;
+  background:var(--paper);transition:.3s;overflow:hidden}
+.faq details[open]{border-color:var(--sea);box-shadow:0 10px 30px -20px rgba(4,50,58,.5)}
+.faq summary{font-family:var(--display);font-size:1.18rem;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;gap:16px;font-weight:600;padding:20px 0}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--coral);font-family:var(--body);font-size:1.5rem;
+  line-height:1;transition:.3s;flex-shrink:0}
+.faq details[open] summary::after{transform:rotate(135deg)}
+.faq details p{margin:0 0 20px;color:rgba(6,42,48,.84);font-size:1.02rem;
+  animation:faqOpen .4s ease}
+@keyframes faqOpen{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* ---- FOOTER ---- */
+.foot{background:var(--abyss);color:rgba(246,239,226,.84);padding:60px 0 30px}
+.foot .cols{display:grid;gap:34px;grid-template-columns:1.4fr 1fr 1fr 1fr}
+.foot h5{font-family:var(--util);text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;
+  color:var(--mango);margin-bottom:14px}
+.foot a{color:rgba(246,239,226,.82);display:block;padding:4px 0;font-size:.94rem}
+.foot a:hover{color:#fff}
+.foot .brandline{font-family:var(--display);font-size:1.3rem;color:#fff;margin-bottom:10px}
+.foot .net span{font-size:.82rem}
+.foot .legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.84rem;color:rgba(246,239,226,.6)}
+.foot .legal a{display:inline}
+
+/* ---- REVEAL ---- */
+.reveal{opacity:0;transform:translateY(22px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---- RESPONSIVE ---- */
+@media(max-width:860px){
+  .brand img{width:180px}
+  .nav-links{position:fixed;top:0;right:-100%;height:100vh;width:78%;max-width:320px;
+    flex-direction:column;align-items:stretch;justify-content:center;gap:14px;padding:40px;
+    background:rgba(4,50,58,.97);backdrop-filter:blur(20px);transition:.4s;z-index:70}
+  .nav-links.open{right:0}
+  .nav-links a.glass{color:#fff;text-align:center;font-size:1.1rem;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)}
+  .burger{display:flex;z-index:80}
+  .foot .cols{grid-template-columns:1fr 1fr}
+  .adband .adcap h4{font-size:1.2rem}
+}
+@media(max-width:540px){
+  .brand img{width:160px}
+  .foot .cols{grid-template-columns:1fr}
+  .finder button{width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal,.card{opacity:1;transform:none}
+}
+</style>
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFGH17YKLL"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-FFGH17YKLL');</script>
+<script>(function(){function s(n,p){try{gtag('event',n,p)}catch(e){}}document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="tel:"]');if(a)s('phone_click',{phone_number:a.getAttribute('href').slice(4),link_text:(a.textContent||'').trim().slice(0,60)})},true);document.addEventListener('submit',function(e){var f=e.target;if(!f||f.getAttribute('role')==='search'||/search/i.test(f.id+' '+f.className+' '+(f.action||'')))return;var id=f.id||f.getAttribute('name')||f.className||'form';if(/estimat|calc/i.test(id+' '+(f.action||'')))s('estimator_use',{form_id:id});s('generate_lead',{form_id:id})},true);window.etAB=function(n,v){var k='etab_'+n,x;try{x=localStorage.getItem(k)}catch(e){}if(!x||v.indexOf(x)<0){x=v[Math.floor(Math.random()*v.length)];try{localStorage.setItem(k,x)}catch(e){}}s('ab_view',{experiment:n,variant:x});try{gtag('set','user_properties',{['ab_'+n]:x})}catch(e){}document.documentElement.setAttribute('data-ab-'+n,x);return x}})();</script>
+<style id="scx-css">
+.scx{--scx-a:#13606b;--scx-ink:#1b1f24;--scx-soft:#4a525c;--scx-line:#dde2e7;background:#fff;color:var(--scx-ink);font-size:17px;line-height:1.6;text-align:left}
+.scx *{box-sizing:border-box}
+.scx .scx-w{max-width:1080px;margin:0 auto;padding:0 20px}
+.scx .scx-crumb{font-size:14px;color:var(--scx-soft);padding:18px 0 0;margin:0}
+.scx .scx-crumb a{color:var(--scx-a)}
+.scx .scx-hero{padding:28px 0 26px}
+.scx .scx-kick{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--scx-a);margin:0 0 8px}
+.scx h1{font-size:clamp(30px,5vw,46px);line-height:1.12;margin:0 0 14px;color:var(--scx-ink)}
+.scx h2{font-size:clamp(23px,3.4vw,31px);line-height:1.2;margin:0 0 12px;color:var(--scx-ink)}
+.scx h3{font-size:19px;margin:0 0 6px;color:var(--scx-ink)}
+.scx p{margin:0 0 14px}
+.scx .scx-lede{font-size:clamp(17px,2.1vw,20px);color:var(--scx-soft);max-width:760px}
+.scx section{padding:34px 0;border-top:1px solid var(--scx-line)}
+.scx .scx-plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:18px;margin-top:18px}
+.scx .scx-plan{border:1.5px solid var(--scx-line);border-radius:16px;padding:22px;display:flex;flex-direction:column;background:#fff}
+.scx .scx-plan.hi{border-color:var(--scx-a);box-shadow:0 14px 34px rgba(0,0,0,.10)}
+.scx .scx-tagl{display:inline-block;align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--scx-a);color:#fff;border-radius:999px;padding:3px 10px;margin-bottom:10px}
+.scx .scx-price{font-size:38px;font-weight:800;line-height:1;margin:8px 0 10px}
+.scx .scx-price small{font-size:15px;font-weight:500;color:var(--scx-soft)}
+.scx .scx-plan ul{margin:0 0 16px;padding-left:20px}
+.scx .scx-plan li{margin:0 0 6px}
+.scx .scx-plan .scx-terms{font-size:13.5px;color:var(--scx-soft);margin:10px 0 0}
+.scx .scx-btn{display:block;width:100%;min-height:48px;margin-top:auto;padding:12px 16px;border:0;border-radius:10px;background:var(--scx-a);color:#fff;font:inherit;font-weight:700;text-align:center;text-decoration:none;cursor:pointer}
+.scx .scx-btn:hover{filter:brightness(1.08)}
+.scx .scx-btn:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}
+.scx .scx-btn.alt{background:#fff;color:var(--scx-a);box-shadow:inset 0 0 0 2px var(--scx-a);margin-top:10px}
+.scx .scx-grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:22px}
+.scx .scx-box{background:#f5f7f9;border-radius:14px;padding:20px}
+.scx .scx-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:14px;margin:16px 0}
+.scx .scx-stat{background:#f5f7f9;border-radius:12px;padding:16px}
+.scx .scx-stat strong{display:block;font-size:28px;line-height:1.1;color:var(--scx-a)}
+.scx .scx-src{font-size:13.5px;color:var(--scx-soft)}
+.scx .scx-src a,.scx a{color:var(--scx-a)}
+.scx .scx-btn,.scx .scx-btn:visited{color:#fff}
+.scx .scx-btn.alt,.scx .scx-btn.alt:visited{color:var(--scx-a)}
+.scx ol.scx-steps{padding-left:22px}
+.scx details{border:1px solid var(--scx-line);border-radius:12px;padding:14px 16px;margin:0 0 10px;background:#fff}
+.scx summary{font-weight:700;cursor:pointer}
+.scx details p{margin:10px 0 0}
+.scx form.scx-form{display:grid;gap:12px;max-width:620px}
+.scx .scx-form label{display:grid;gap:4px;font-weight:600;font-size:15px}
+.scx .scx-form input,.scx .scx-form textarea{font:inherit;padding:11px 12px;border:1.5px solid var(--scx-line);border-radius:10px;width:100%;background:#fff;color:var(--scx-ink)}
+.scx .scx-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.scx .scx-note{font-size:14px;color:var(--scx-soft)}
+.scx .scx-badge{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;border-radius:6px;padding:2px 8px;background:#fff3cd;color:#6b4f00;border:1px solid #e6c65c}
+.scx-own{text-align:center;font-size:15px;margin:18px auto;padding:0 16px}
+@media (max-width:480px){.scx{font-size:16px}.scx .scx-w{padding:0 16px}.scx .scx-price{font-size:32px}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Service","@id":"https://besthotelsbelize.com/get-featured/#service","name":"Featured property listing","serviceType":"Featured listing for hotels and vacation rentals","description":"Travelers pick a Belize stay by setting first: island, beach or jungle. Featured puts your property near the top of the matching section with a photo and a direct booking link.","provider":{"@type":"Organization","name":"Best Hotels Belize","url":"https://besthotelsbelize.com/","telephone":"+1-800-481-8638","parentOrganization":{"@type":"Organization","name":"Eye To Ad Media","url":"https://www.eyetoad.com/"}},"areaServed":"Belize","offers":[{"@type":"Offer","name":"Featured stay (monthly)","sku":"STAY-FEATURED-M","price":"39.00","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"39.00","priceCurrency":"USD","billingDuration":"P1M","unitText":"month"},"availability":"https://schema.org/InStock","url":"https://besthotelsbelize.com/get-featured/#plans"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Best Hotels Belize","item":"https://besthotelsbelize.com/"},{"@type":"ListItem","position":2,"name":"Get featured","item":"https://besthotelsbelize.com/get-featured/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is a basic listing free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Hotels, resorts and lodges in Belize can request a free basic listing on Best Hotels Belize. We confirm you own or manage the property first. Featured is optional at $39 a month."}},{"@type":"Question","name":"What does Featured include?","acceptedAnswer":{"@type":"Answer","text":"Top placement in the island resort, beach villa and jungle lodge sections on Best Hotels Belize, a Featured badge, one photo, a short pitch and a direct link to book with you. Change the photo or seasonal offer whenever you like."}},{"@type":"Question","name":"Do you guarantee bookings?","acceptedAnswer":{"@type":"Answer","text":"No. We guarantee the placement and that it’s live, labeled and linked to your booking page. Guests still choose on price, reviews, photos and dates."}},{"@type":"Question","name":"Why are paid links marked sponsored?","acceptedAnswer":{"@type":"Answer","text":"Search engines ask sites to label paid links with rel=\"sponsored\". Doing it right keeps the guide trustworthy for travelers and protects your own website from looking like it bought links."}},{"@type":"Question","name":"Can I cancel?","acceptedAnswer":{"@type":"Answer","text":"Yes, anytime online. Your Featured spot stays live through the month you’ve paid for."}}]}]}</script>
+<script src="https://usabusinesssearch.com/secure-checkout/checkout.js" defer></script>
+</head>
+<body>
+
+<header class="hero">
+  <video autoplay muted loop playsinline poster="/images/best-hotels-belize.jpg">
+    <source src="/images/best-hotels-belize.mp4" type="video/mp4">
+  </video>
+  <div class="hero-in">
+    <span class="eyebrow">Belize Barrier Reef &middot; Jungle &middot; Cayes</span>
+    <h1>Find Your <em>Dream Hotel</em><br>in Belize</h1>
+    <p class="lede">From overwater villas on Ambergris Caye to canopy suites deep in the Maya jungle, this is the independent guide to where to stay in Belize, matched to the trip you actually want.</p>
+
+    <div class="finder" id="finder">
+      <div class="finder-row">
+        <select id="f-region" aria-label="Region">
+          <option value="">Where to go &mdash; any region</option>
+          <option value="island">Islands &amp; Cayes</option>
+          <option value="coast">Placencia Coast</option>
+          <option value="jungle">Jungle &amp; Cayo</option>
+        </select>
+        <select id="f-vibe" aria-label="Trip style">
+          <option value="">Trip style &mdash; any vibe</option>
+          <option value="beach">Beach &amp; reef</option>
+          <option value="romance">Romance</option>
+          <option value="adventure">Adventure &amp; ruins</option>
+          <option value="seclusion">Seclusion / private</option>
+          <option value="wellness">Wellness &amp; spa</option>
+          <option value="family">Family</option>
+        </select>
+        <select id="f-budget" aria-label="Budget">
+          <option value="">Budget &mdash; any</option>
+          <option value="mid">Mid-range</option>
+          <option value="luxury">Luxury</option>
+          <option value="ultra">Ultra-luxury</option>
+        </select>
+        <button id="f-go" type="button">Find hotels</button>
+      </div>
+      <div class="finder-hint" id="f-hint">16 hand-picked resorts ready &mdash; pick a filter, then scroll to your matches.</div>
+    </div>
+  </div>
+</header>
+<main id="main" class="scx">
+<div class="scx-w">
+  <p class="scx-crumb"><a href="/">Best Hotels Belize</a> &rsaquo; Get featured</p>
+  <div class="scx-hero">
+    <p class="scx-kick">For hotels &amp; hosts</p>
+    <h1>Put your Belize resort or lodge at the top of the list</h1>
+    <p class="scx-lede">Travelers pick a Belize stay by setting first: island, beach or jungle. Featured puts your property near the top of the matching section with a photo and a direct booking link.</p>
+  </div>
+</div>
+<section id="plans" aria-labelledby="plans-h"><div class="scx-w">
+  <h2 id="plans-h">Get your hotel or resort seen by travelers planning Belize</h2>
+  <p>One plan for hotels, resorts and jungle lodges. A basic listing stays free.</p>
+  <div class="scx-plans">
+    <article class="scx-plan">
+      
+      <h3>Basic listing</h3>
+      <p class="scx-price">$0</p>
+      <ul><li>Property name, area and contact link</li><li>Corrections whenever details change</li><li>We check you manage the property first</li></ul>
+      <a class="scx-btn alt" href="#free-listing">Request a free listing</a>
+      
+    </article>
+    <article class="scx-plan hi">
+      <span class="scx-tagl">Most popular</span>
+      <h3>Featured</h3>
+      <p class="scx-price">$39<small> / month</small></p>
+      <ul><li>Top placement in the island resort, beach villa and jungle lodge sections on Best Hotels Belize</li><li>A Featured badge, a photo and a short pitch</li><li>A direct link to book with you, not a middleman</li><li>Update your photo or offer anytime</li></ul>
+      <button type="button" class="scx-btn sc-buy" data-sku="STAY-FEATURED-M" data-site="besthotelsbelize.com">Get Featured: $39/mo</button>
+      <p class="scx-terms">Billed monthly. Cancel anytime online.</p>
+    </article>
+  </div>
+  <p class="scx-note" style="margin-top:14px">Secure checkout on Authorize.net&rsquo;s payment page; we never see your card number. Monthly plans renew each month until you cancel, and you can cancel anytime online.</p>
+</div></section>
+<section aria-labelledby="mkt-h"><div class="scx-w">
+  <h2 id="mkt-h">Belize&rsquo;s record year</h2>
+  <p>Belize welcomed 562,405 overnight visitors in 2024 in the Belize Tourism Board&rsquo;s first count, 21% more than 2023 and almost 12% above 2019. The 2025 preliminary figure of 551,698 shows demand has held.</p>
+  <p>Overnight visitors are the ones who book rooms. Reaching them with a direct booking link keeps more of each stay in your pocket.</p>
+  <div class="scx-stats"><div class="scx-stat"><strong>562,405</strong>overnight visitors in 2024</div><div class="scx-stat"><strong>551,698</strong>overnight visitors in 2025 (preliminary)</div><div class="scx-stat"><strong>+11.8%</strong>2024 above 2019</div></div>
+  <p class="scx-src">Sources: <a href="https://travelmarketreport.com/destinations/articles/belize-booms-with-21-increase-in-overnight-visitors" rel="noopener" target="_blank">Travel Market Report on Belize Tourism Board 2024 arrivals</a> &middot; <a href="https://www.sanpedrosun.com/business-and-economy/2025/01/14/belize-celebrates-record-breaking-tourist-arrivals-in-2024/" rel="noopener" target="_blank">The San Pedro Sun, January 14, 2025</a>. Figures checked October 26, 2026.</p>
+</div></section>
+<section aria-labelledby="feat-h"><div class="scx-w scx-grid2">
+  <div>
+    <h2 id="feat-h">What &ldquo;Featured&rdquo; means here</h2>
+    <ul><li><strong>Top placement:</strong> your hotel or resort appears near the top of the island resort, beach villa and jungle lodge sections on Best Hotels Belize.</li><li><strong>A clear badge:</strong> every paid spot is labeled <span class="scx-badge">Featured</span>.</li><li><strong>A photo:</strong> your best room, view or pool shot.</li><li><strong>Your direct booking link:</strong> guests land on your own site or booking page. Paid links carry <code>rel="sponsored"</code>, as search engines require.</li><li><strong>No pay-to-rank reviews:</strong> paying never changes our editorial picks or what we say about a property.</li></ul>
+  </div>
+  <div class="scx-box">
+    <h3>How it works</h3>
+    <ol class="scx-steps"><li>Choose Featured and check out securely.</li><li>Reply to the welcome email with a photo, a short pitch and your direct booking link.</li><li>We confirm you own or manage the property, then your spot goes live, usually within 48 hours.</li></ol>
+  </div>
+</div></section>
+<section id="free-listing" aria-labelledby="free-h"><div class="scx-w scx-grid2">
+  <div>
+    <h2 id="free-h">Request a free listing</h2>
+    <p>Licensed hotels, resorts and jungle lodges in Belize can request a free basic listing. Send us the details and we&rsquo;ll check them before anything appears on Best Hotels Belize.</p>
+  </div>
+  <form class="scx-form" id="scx-free-form" method="POST" data-a="info" data-b="eyetoad.com" action="#">
+  <input type="hidden" name="_subject" value="Free listing request — besthotelsbelize.com">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://besthotelsbelize.com/get-featured/?sent=1">
+  <input type="hidden" name="site" value="besthotelsbelize.com">
+  <div class="scx-hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+  <label>Property name<input name="business" required autocomplete="organization"></label>
+  <label>Your name<input name="name" required autocomplete="name"></label>
+  <label>Email<input name="email" type="email" required autocomplete="email"></label>
+  <label>Phone (optional)<input name="phone" type="tel" autocomplete="tel"></label>
+  <label>Website or Google Maps link (optional)<input name="website" type="url" placeholder="https://"></label>
+  <label>Anything we should know? (optional)<textarea name="message" rows="4"></textarea></label>
+  <button class="scx-btn" type="submit">Request my free listing</button>
+  <p class="scx-note" id="scx-form-msg" role="status" aria-live="polite">We reply within one business day and only use your details to set up your listing.</p>
+</form>
+<script>(function(){var f=document.getElementById('scx-free-form');if(!f)return;var t0=Date.now();f.action='https://formsubmit.co/'+f.getAttribute('data-a')+'@'+f.getAttribute('data-b');f.addEventListener('submit',function(e){if(Date.now()-t0<3000||(f._honey&&f._honey.value)){e.preventDefault();var m=document.getElementById('scx-form-msg');if(m)m.textContent='One moment, please check your details and try again.';}});if(/[?&]sent=1/.test(location.search)){var m=document.getElementById('scx-form-msg');if(m)m.textContent='Thanks, we got your request. We will reply within one business day.';}})();</script>
+</div></section>
+<section id="faq" aria-labelledby="faq-h"><div class="scx-w">
+  <h2 id="faq-h">Questions owners ask</h2>
+  <details><summary>Is a basic listing free?</summary><p>Yes. Hotels, resorts and lodges in Belize can request a free basic listing on Best Hotels Belize. We confirm you own or manage the property first. Featured is optional at $39 a month.</p></details>
+  <details><summary>What does Featured include?</summary><p>Top placement in the island resort, beach villa and jungle lodge sections on Best Hotels Belize, a Featured badge, one photo, a short pitch and a direct link to book with you. Change the photo or seasonal offer whenever you like.</p></details>
+  <details><summary>Do you guarantee bookings?</summary><p>No. We guarantee the placement and that it&rsquo;s live, labeled and linked to your booking page. Guests still choose on price, reviews, photos and dates.</p></details>
+  <details><summary>Why are paid links marked sponsored?</summary><p>Search engines ask sites to label paid links with rel="sponsored". Doing it right keeps the guide trustworthy for travelers and protects your own website from looking like it bought links.</p></details>
+  <details><summary>Can I cancel?</summary><p>Yes, anytime online. Your Featured spot stays live through the month you&rsquo;ve paid for.</p></details>
+  <p class="scx-note" style="margin-top:16px">Questions first? Call <a href="tel:+18004818638">1-800-481-8638</a>. Paid placements are always labeled and never change our editorial picks.</p>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap">
+<div class="cols">
+  <div>
+    <div class="brandline">Best Hotels Belize</div>
+    <p style="font-size:.95rem;max-width:280px">Your independent guide to the finest island resorts, beach villas, and jungle lodges along the Belize Barrier Reef and beyond.</p>
+    <p class="net" style="margin-top:14px"><span>An <a href="https://www.eyetoad.com" rel="noopener nofollow">Eye To Ad Media</a> travel resource &mdash; part of a global SEO &amp; destination network.</span></p>
+  </div>
+  <div>
+    <h5>Explore</h5>
+    <a href="/">Best Hotels in Belize</a>
+    <a href="/belize-island-resorts/">Belize Island Resorts</a>
+    <a href="/belize-jungle-lodges/">Belize Jungle Lodges</a>
+    <a href="/#finder">Hotel Finder Tool</a>
+    <a href="/#faq">Travel FAQ</a>
+  </div>
+  <div>
+    <h5>Belize Resources</h5>
+    <a href="https://www.travelbelize.org" rel="nofollow noopener">Official Belize Tourism</a>
+    <a href="https://www.tripadvisor.com/Hotels-g291959-Belize-Hotels.html" rel="nofollow noopener">Belize Hotels on Tripadvisor</a>
+    <a href="https://whc.unesco.org/en/list/764/" rel="nofollow noopener">Barrier Reef (UNESCO)</a>
+    <a href="https://belizeseoagency.com" rel="noopener nofollow">Belize SEO Agency</a>
+  </div>
+  <div>
+    <h5>Our Network</h5>
+    <a href="https://www.eyetoad.com" rel="noopener nofollow">Eye To Ad Media</a>
+    <a href="https://belizeseoagency.com" rel="noopener nofollow">Belize SEO Agency</a>
+    <a href="https://www.searchconverts.com" rel="noopener nofollow">Search Converts</a>
+    <a href="/sitemap.html">HTML Sitemap</a>
+  </div>
+</div>
+<div class="legal">
+  <span>&copy; 2026 Best Hotels Belize. Built &amp; optimized by <a href="https://www.eyetoad.com" rel="noopener nofollow">Eye To Ad Media</a>.</span>
+  <span>Independent guide &mdash; rates &amp; availability via each resort.</span>
+</div>
+</div></footer>
+<script>try{
+// nav scroll + burger
+const nav=document.querySelector('.nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));
+const burger=document.querySelector('.burger'),links=document.querySelector('.nav-links');
+if(burger){burger.addEventListener('click',()=>links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));}
+// reveal on scroll
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.14});
+document.querySelectorAll('.reveal,.card').forEach((el,i)=>{el.style.transitionDelay=(i%3*70)+'ms';io.observe(el)});
+
+// ---- HERO FINDER ----
+const grid=document.getElementById('hotelGrid');
+const cards=[...grid.querySelectorAll('.card')];
+const hint=document.getElementById('f-hint'),noMatch=document.getElementById('noMatch');
+function applyFilter(){
+  const r=document.getElementById('f-region').value,
+        v=document.getElementById('f-vibe').value,
+        b=document.getElementById('f-budget').value;
+  let n=0;
+  cards.forEach(c=>{
+    const ok=(!r||c.dataset.region===r)&&(!v||c.dataset.vibe===v)&&(!b||c.dataset.budget===b);
+    c.classList.toggle('hidden',!ok); if(ok)n++;
+  });
+  noMatch.style.display=n?'none':'block';
+  hint.textContent=n?(n+' match'+(n>1?'es':'')+' below \u2014 scroll down to your shortlist.'):'No exact match \u2014 try loosening a filter.';
+  document.getElementById('hotels').scrollIntoView({behavior:'smooth'});
+}
+document.getElementById('f-go').addEventListener('click',applyFilter);
+
+// ---- MATCHER QUIZ ----
+const pick={};
+const props={"Alaia Belize, Autograph Collection": {"region": "island", "vibe": "beach", "budget": "luxury", "url": "/belize-island-resorts/", "where": "San Pedro, Ambergris Caye"}, "Matachica Resort & Spa": {"region": "island", "vibe": "romance", "budget": "luxury", "url": "/belize-island-resorts/", "where": "North Ambergris Caye"}, "Victoria House": {"region": "island", "vibe": "beach", "budget": "luxury", "url": "/belize-island-resorts/", "where": "South San Pedro, Ambergris Caye"}, "Cayo Espanto": {"region": "island", "vibe": "seclusion", "budget": "ultra", "url": "/belize-island-resorts/", "where": "Private island off Ambergris"}, "Las Terrazas Resort & Residences": {"region": "island", "vibe": "family", "budget": "luxury", "url": "/belize-island-resorts/", "where": "North Ambergris Caye"}, "Grand Caribe Belize": {"region": "island", "vibe": "beach", "budget": "mid", "url": "/belize-island-resorts/", "where": "North of San Pedro Town"}, "Turtle Inn": {"region": "coast", "vibe": "beach", "budget": "luxury", "url": "/#coast", "where": "Placencia Peninsula"}, "Chabil Mar Villas": {"region": "coast", "vibe": "romance", "budget": "luxury", "url": "/#coast", "where": "Placencia Village"}, "Naia Resort & Spa": {"region": "coast", "vibe": "wellness", "budget": "luxury", "url": "/#coast", "where": "Placencia Peninsula"}, "Ocean Breeze Beach Resort": {"region": "coast", "vibe": "walkable", "budget": "mid", "url": "/#coast", "where": "Placencia Sidewalk"}, "The Lodge at Chaa Creek": {"region": "jungle", "vibe": "adventure", "budget": "luxury", "url": "/belize-jungle-lodges/", "where": "San Ignacio, Cayo"}, "Ka'ana Resort": {"region": "jungle", "vibe": "adventure", "budget": "luxury", "url": "/belize-jungle-lodges/", "where": "San Ignacio, Cayo"}, "Blancaneaux Lodge": {"region": "jungle", "vibe": "seclusion", "budget": "luxury", "url": "/belize-jungle-lodges/", "where": "Mountain Pine Ridge"}, "Copal Tree Lodge": {"region": "jungle", "vibe": "eco", "budget": "luxury", "url": "/belize-jungle-lodges/", "where": "Punta Gorda, Toledo"}, "Villa Massis": {"region": "jungle", "vibe": "seclusion", "budget": "ultra", "url": "/belize-jungle-lodges/", "where": "10 min from San Ignacio"}, "Coco Plum Island Resort": {"region": "jungle", "vibe": "seclusion", "budget": "luxury", "url": "/belize-jungle-lodges/", "where": "Private caye near Dangriga"}};
+document.querySelectorAll('.matcher .q').forEach(q=>{
+  q.querySelectorAll('.opts button').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      q.querySelectorAll('button').forEach(b=>b.classList.remove('sel'));
+      btn.classList.add('sel'); pick[q.dataset.key]=btn.dataset.v; tryMatch();
+    });
+  });
+});
+function tryMatch(){
+  if(!(pick.setting&&pick.who&&pick.spend))return;
+  const order=[pick.spend,'luxury','mid','ultra'];
+  let best=null,bestScore=-1;
+  for(const[name,p]of Object.entries(props)){
+    let s=0;
+    if(p.region===pick.setting)s+=3;
+    if(p.vibe===pick.who)s+=2;
+    if(p.budget===pick.spend)s+=2; else if(p.budget==='luxury')s+=1;
+    if(s>bestScore){bestScore=s;best={name,...p};}
+  }
+  const labels={island:'the islands & cayes',coast:'the Placencia coast',jungle:'the jungle & Cayo'};
+  const el=document.getElementById('matchResult');
+  el.innerHTML='<h4>'+best.name+'</h4><p>Based in '+best.where+', it\u2019s our pick for '+labels[pick.setting]+'. '+
+    '<a href="'+best.url+'">See it and similar stays \u2192</a></p>';
+  el.classList.add('show');
+}
+
+
+}catch(e){}</script>
+</body>
+</html>
